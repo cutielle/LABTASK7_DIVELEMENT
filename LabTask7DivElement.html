@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LabTask7DivElement</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .circle {
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border-radius: 50%;
+        }
+
+        .query {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            letter-spacing: normal;
+            padding: 2%;
+            width: 100%;
+            max-width: 300px;
+            border: 0.5px solid rgb(41, 39, 39);
+        }
+
+        .YouTube {
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            letter-spacing: normal;
+            padding: 2%;
+            width: auto;
+            background-color: rgb(41, 39, 39);
+        }
+
+        .Facebook {
+            display: inline-flex;
+            align-items: flex-start;
+            background-color: white;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            display: block;
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+            border-left: 1px solid rgba(0, 0, 0, 0.2);
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-info {
+            border-left: 1px solid rgba(0, 0, 0, 0.2);
+            border-right: 1px solid rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-top: none;
+            height: 100px;
+            padding: 10px;
+            padding-bottom: 25px;
+            gap: 10px;
+        }
+
+        .profile-info button {
+            background-color: rgb(24, 119, 242);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        #name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 0.5px;
+        }
+
+        #friends {
+            margin-top: 5px;
+            font-size: 15px;
+            color: rgb(145, 143, 143);
+        }
+
+        h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        p2 {
+            color: rgb(177, 177, 177);
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="square"></div>
+
+    <hr>
+
+    <div class="circle"></div>
+
+    <hr>
+
+    <div class="query">
+        <p>Satisfied with our service?</p>
+        <button>Yes</button>
+        <button>No</button>
+    </div>
+
+    <hr>
+
+    <div class="YouTube">
+        <h1>Install YouTube Music</h1>
+        <p2>Add YouTube Music to your desktop to quick and <br> easy access.</p2>
+    </div>
+
+    <hr>
+
+    <div class="Facebook">
+        <div class="profile">
+            <img src="https://i.ibb.co/tLz71tT/mojojo.jpg" alt="Mojojo" width="100px" height="100px">
+            <div class="profile-info">
+                <p id="name">Mojojo</p>
+                <p id="friends">2 mutual friends</p>
+                <button>Add Friend</button>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+
+    <div class="Facebook">
+        <div class="profile">
+            <img src="https://i.ibb.co/L59yp5y/bubbles.jpg" alt="Bubbles" width="100px" height="100px">
+            <div class="profile-info">
+                <p id="name">Bubbles</p>
+                <p id="friends">2 mutual friends</p>
+                <button>Add Friend</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="Facebook">
+        <div class="profile">
+            <img src="https://i.ibb.co/bR3k01B/blossom.jpg" alt="Blossom" width="100px" height="100px">
+            <div class="profile-info">
+                <p id="name">Blossom</p>
+                <p id="friends">2 mutual friends</p>
+                <button>Add Friend</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="Facebook">
+        <div class="profile">
+            <img src="https://i.ibb.co/pXyNxFN/buttercup.jpg" alt="Buttercup" width="100px" height="100px">
+            <div class="profile-info">
+                <p id="name">Buttercup</p>
+                <p id="friends">2 mutual friends</p>
+                <button>Add Friend</button>
+            </div>
+        </div>
+    </div>
+
+</html>
