@@ -1,123 +1,180 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>LabTask7DivElement</title>
     <style>
         body {
+            margin: 100px;
             font-family: Arial, Helvetica, sans-serif;
         }
 
         .square {
+            border-color: 1px solid #303030;
+            background-color: red;
             width: 100px;
             height: 100px;
-            background-color: red;
+            margin: auto;
         }
 
         .circle {
-            margin-top: 20px;
-            width: 100px;
-            height: 100px;
+            border: 1px solid #303030;
             background-color: green;
             border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: auto;       
         }
 
         .query {
-            display: inline-block;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            letter-spacing: normal;
-            padding: 2%;
-            width: 100%;
-            max-width: 300px;
-            border: 0.5px solid rgb(41, 39, 39);
+            background-color: white;
+            border: 1px solid rgb(209, 206, 206);
+            width: 300px;
+            padding: 10px;
+            margin: auto;
         }
 
         .YouTube {
-            display: inline-block;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            letter-spacing: normal;
-            padding: 2%;
-            width: auto;
-            background-color: rgb(41, 39, 39);
+            border: 1px solid black;
+            background-color: #2C2C2C;
+            width: 420px;
+            padding: 1px;
+            padding-left: 20px;
+            margin: auto;
+        }
+        .ins {
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .description {
+            color: #9EA0A3;
+            font-family: sans-serif;
         }
 
         .Facebook {
-            display: inline-flex;
-            align-items: flex-start;
             background-color: white;
-            gap: 10px;
-            padding: 10px;
+            margin: auto;
+            margin-top: 20px;
+            width: fit-content;
+            height: fit-content;
         }
-
-        .profile img {
+        .profile img{
             width: 200px;
             height: 200px;
-            display: block;
             border-top-left-radius: 5%;
             border-top-right-radius: 5%;
+            display: block;
             border-left: 1px solid rgba(0, 0, 0, 0.2);
             border-right: 1px solid rgba(0, 0, 0, 0.2);
             border-top: 1px solid rgba(0, 0, 0, 0.2);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         }
-
         .profile-info {
             border-left: 1px solid rgba(0, 0, 0, 0.2);
             border-right: 1px solid rgba(0, 0, 0, 0.2);
             border-bottom: 1px solid rgba(0, 0, 0, 0.2);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             border-top: none;
-            height: 100px;
+            width: 180px;
+            height: auto;
             padding: 10px;
-            padding-bottom: 25px;
-            gap: 10px;
+            padding-bottom: 2px;
         }
-
-        .profile-info button {
-            background-color: rgb(24, 119, 242);
+        .name{
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 25px;
+            padding-left: 8px;
+            margin-top: 2px;
+        }
+        .friends {
+            color: grey;
+            margin-top: -20px;
+            margin-bottom: 25px;
+            padding-left: 8px;
+        }
+        .add {
+            background-color: #3C73D8;
+            width: 100px;
+            height: 35px;
+            border-radius: 3px;
             color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            font-weight: 600;
-        }
-
-        #name {
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 5px;
-            margin-bottom: 0.5px;
-        }
-
-        #friends {
-            margin-top: 5px;
+            font-family: sans-serif;
             font-size: 15px;
-            color: rgb(145, 143, 143);
+            border: none;
+            margin: 10px;
+            margin-top: -7px;
+            cursor: pointer;
+        }
+        .add:active {
+            background-color: blue;
+        }
+        
+        .FB-container {
+            background-color: white;
+            margin: auto;
+            width: fit-content;
+            padding: 20px;
+            display: flex;
+            gap: 0;
+        }
+        .FB-items {
+            background-color: white;
+            border-color: #9EA0A3;
+            box-shadow: #9EA0A3;
+            width: 220px;
+            margin: auto;
+            display: inline-block;
+            margin: -18px -5px;
         }
 
-        h1 {
-            color: white;
-            font-size: 24px;
+        .google{
+            margin: auto;
+            background-color: white;
+            text-align: center;
+        }
+        .search {
+            margin: 10px;
+            width: 500px;
+            padding: 10px;
+            border-radius: 20px;
+            border: gray;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .google-logo {
+            margin-top: 20px;
         }
 
-        p2 {
-            color: rgb(177, 177, 177);
-            font-size: 18px;
+        .buttons {
+            margin: auto;
+            padding: 10px;
         }
+        .google button {
+            margin: 5px;
+            border: 1px solid white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .google button:hover {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+        .google button:active {
+            border: 1px solid blue;
+        } */
+
     </style>
 </head>
 
 <body>
     <div class="square"></div>
-
     <hr>
 
     <div class="circle"></div>
-
     <hr>
 
     <div class="query">
@@ -125,60 +182,74 @@
         <button>Yes</button>
         <button>No</button>
     </div>
-
     <hr>
 
     <div class="YouTube">
-        <h1>Install YouTube Music</h1>
-        <p2>Add YouTube Music to your desktop to quick and <br> easy access.</p2>
+        <p class="ins">Install YouTube Music</p>
+        <p class="description">Add YouTube Music to your desktop for quick and easy access.</p>
     </div>
-
     <hr>
 
     <div class="Facebook">
         <div class="profile">
             <img src="https://i.ibb.co/tLz71tT/mojojo.jpg" alt="Mojojo" width="100px" height="100px">
             <div class="profile-info">
-                <p id="name">Mojojo</p>
-                <p id="friends">2 mutual friends</p>
-                <button>Add Friend</button>
+                <p class="name">Mojojo</p>
+                <p class="friends">2 mutual friends</p>
+                <button class="add">Add Friend</button>
             </div>
         </div>
     </div>
-    
     <hr>
 
-    <div class="Facebook">
-        <div class="profile">
-            <img src="https://i.ibb.co/L59yp5y/bubbles.jpg" alt="Bubbles" width="100px" height="100px">
-            <div class="profile-info">
-                <p id="name">Bubbles</p>
-                <p id="friends">2 mutual friends</p>
-                <button>Add Friend</button>
+    <div class="FB-container">
+        <div class="FB-items">
+            <div class="profile">
+                <img src="https://i.ibb.co/L59yp5y/bubbles.jpg" alt="Bubbles" width="100px" height="100px">
+                <div class="profile-info">
+                    <p class="name">Bubbles</p>
+                    <p class="friends">2 mutual friends</p>
+                    <button class="add">Add Friend</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="FB-items">
+            <div class="profile">
+                <img src="https://i.ibb.co/bR3k01B/blossom.jpg" alt="Blossom" width="100px" height="100px">
+                <div class="profile-info">
+                    <p class="name">Blossom</p>
+                    <p class="friends">2 mutual friends</p>
+                    <button class="add">Add Friend</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="FB-items">
+            <div class="profile">
+                <img src="https://i.ibb.co/pXyNxFN/buttercup.jpg" alt="Buttercup" width="100px" height="100px">
+                <div class="profile-info">
+                    <p class="name">Buttercup</p>
+                    <p class="friends">2 mutual friends</p>
+                    <button class="add">Add Friend</button>
+                </div>
             </div>
         </div>
     </div>
+    <hr>
 
-    <div class="Facebook">
-        <div class="profile">
-            <img src="https://i.ibb.co/bR3k01B/blossom.jpg" alt="Blossom" width="100px" height="100px">
-            <div class="profile-info">
-                <p id="name">Blossom</p>
-                <p id="friends">2 mutual friends</p>
-                <button>Add Friend</button>
-            </div>
+    <div class="google">
+        <div class="google-logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <div>
+            <input class="search" type="text" placeholder="Search Google or type a URL">
+        </div>
+        <div class="buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
         </div>
     </div>
 
-    <div class="Facebook">
-        <div class="profile">
-            <img src="https://i.ibb.co/pXyNxFN/buttercup.jpg" alt="Buttercup" width="100px" height="100px">
-            <div class="profile-info">
-                <p id="name">Buttercup</p>
-                <p id="friends">2 mutual friends</p>
-                <button>Add Friend</button>
-            </div>
-        </div>
-    </div>
-
+</body>
 </html>
